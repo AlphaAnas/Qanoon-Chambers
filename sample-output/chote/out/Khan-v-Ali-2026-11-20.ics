@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Chote//Case Hearing Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:khan-v-ali-20261120-hearing@chote
+DTSTAMP:20261107T180626Z
+DTSTART;TZID=Asia/Karachi:20261120T090000
+DTEND;TZID=Asia/Karachi:20261120T100000
+SUMMARY:Khan v. Ali | Civil Court Karachi South | Recovery suit on a dishonoured cheque (Section 489-F context)
+DESCRIPTION:Case: Khan v. Ali\nMatter: Recovery suit on a dishonoured cheque (Section 489-F context)\nNeeded for this hearing: Not provided yet; confirm preparation documents and tasks with the lawyer.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Case hearing tomorrow: Khan v. Ali
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Case hearing in 1 hour: Khan v. Ali
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:khan-v-ali-20261113-prep@chote
+DTSTAMP:20261107T180626Z
+DTSTART;TZID=Asia/Karachi:20261113T090000
+DTEND;TZID=Asia/Karachi:20261113T100000
+SUMMARY:PREP: Khan v. Ali
+DESCRIPTION:Prepare for the 2026-11-20 09:00 Asia/Karachi hearing at Civil Court Karachi South.\nNeeded documents and tasks: not yet specified in the case diary; confirm with the lawyer.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Preparation event tomorrow: Khan v. Ali
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Preparation event in 1 hour: Khan v. Ali
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

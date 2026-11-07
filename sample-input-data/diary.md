@@ -1,0 +1,2 @@
+@chote New case: Khan v. Ali, recovery suit on a dishonoured cheque (Section 489-F context), Civil Court Karachi South. Hearing on 20 Nov 2026 at 9:00 AM. Please add it to my calendar with the alerts and the 7-day PREP event, save it in diary.md, and confirm the calendar events. When that is confirmed, hand off to ustaad by mentioning it: ask it to find the relevant laws for this case and post suggestions for me to approve. Don't continue past that point.
+
