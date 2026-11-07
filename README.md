@@ -15,7 +15,19 @@ Switch Console runs four Claude Code agents on the lawyer's own machine and puts
 
 ## Flow
 chote (hearing + calendar) → ustaad (laws) → lawyer approves → drafter (draft) → counter (review) → drafter (revise) → lawyer's final review
-
+```mermaid
+flowchart TD
+    L([Senior lawyer]) -->|"New case + hearing date"| C["@chote<br/>clerk"]
+    C -->|"Calendar events + 7-day prep reminder"| CAL[(Calendar and diary.md)]
+    C -->|"@mention: find laws"| U["@ustaad<br/>researcher"]
+    U -->|"Live fetch of public legal sources"| S["Suggestions with real URLs"]
+    S --> A{"Lawyer approves?"}
+    A -->|"No"| U
+    A -->|"approve S1"| D["@drafter<br/>drafts .docx and .pdf"]
+    D -->|"Draft for review"| K["@counter<br/>re-fetches citations, finds flaws"]
+    K -->|"Flaws + cross-questions (max 2 rounds)"| D
+    K -->|"Final report"| F([Lawyer's final review])
+```
 ## Setup
 1. Install Switch Console and Docker: https://github.com/sandbox-quantum/switch/releases/latest
 2. Sign in to Claude Code on your machine.
