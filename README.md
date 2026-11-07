@@ -2,7 +2,7 @@
 
 A solo lawyer's team of AI agents and a junior lawyer in one Mattermost room, connected with Switch. The lawyer approves every step. DRAFT outputs are for lawyer review and are not legal advice.
 
-## How Switch is used
+## How [Switch](https://github.com/sandbox-quantum/switch) is used
 Switch Console runs four Claude Code agents on the lawyer's own machine and puts them in a Mattermost room with the lawyer and a junior. Agents hand work to each other with @mentions, and the room log is the shared record. Without Switch, these would be four disconnected scripts.
 
 ## Agents
@@ -12,6 +12,9 @@ Switch Console runs four Claude Code agents on the lawyer's own machine and puts
 | @ustaad | Researcher: fetches real public legal sources live, cites the URL and section, suggests them for approval |
 | @drafter | Drafts applications to Word and PDF using only approved citations |
 | @counter | Reviews drafts, verifies citations by re-fetching them, cross-questions, and sends flaws back (max 2 rounds) |
+
+## Demo video
+[Link](https://drive.google.com/file/d/1JzFdiOi-fA9qN58u0wuASn3r75Z5gcYX/view?usp=sharing)
 
 ## Flow
 chote (hearing + calendar) → ustaad (laws) → lawyer approves → drafter (draft) → counter (review) → drafter (revise) → lawyer's final review
@@ -40,5 +43,3 @@ flowchart TD
 - Real: live web fetching of public legal sources, calendar creation, Word and PDF generation.
 - Agents can make mistakes. Verify every citation against its URL.
 
-## Demo video
-[Link](https://drive.google.com/file/d/1JzFdiOi-fA9qN58u0wuASn3r75Z5gcYX/view?usp=sharing)
